@@ -1,0 +1,52 @@
+
+\documentclass{beamer}
+
+\usepackage{setspace}
+
+\useinnertheme{default}
+\beamertemplatenavigationsymbolsempty
+
+\usepackage{pgf}
+\usepackage{pgfpages}
+\usepackage{mborder}
+\pgfpagesuselayout{boxed}
+
+\begin{document}
+
+\begin{frame}{Line spacing in Beamer}
+  % 
+  \begin{columns}
+    %
+    \begin{column}{.45\textwidth}
+
+      Using the \texttt{setspace} package, locally 
+      different line spacing can be achieved.
+
+      \vspace{0.7cm}
+
+      {\setstretch{2.0} For this, use the \texttt{setstretch}
+        command to get, for example, double spacing. It's 
+        \textbf{important} that you end your paragraph with
+        ``\texttt{\textbackslash\textbackslash}''.\\}
+
+    \end{column}
+    %
+    \begin{column}{.45\textwidth}
+
+      {\setstretch{2.5} With the symbol line space adjustment 
+       works fine for many values.\\}
+
+      \vspace{1.3cm}
+
+      {\setstretch{5.0} But without it, no matter the 
+       setstretch value, the paragraph has default spacing.}
+
+      \vspace{1.6cm}
+
+    \end{column}
+    %
+  \end{columns}
+  %
+\end{frame}
+
+\end{document}
